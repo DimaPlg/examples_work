@@ -127,13 +127,12 @@ async def full_cycle(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def about(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Информация о боте"""
     about_text = """
-🤖 *Allure Report Bot*
-Версия: 2.1
-Автор: Ваша команда
-Функционал:
-- Запуск тестов (/runtests)
-- Генерация отчета (/allurereport)
-- Полный цикл (/fullreport)
+👨💻 *Обо\_мне* 
+──────────────────
+📌 *Имя:* Дмитрий Плешко  
+📍 *Локация:* Минск\, Беларусь  
+📧 *Email:* pleshko\.dima19@gmail\.com  
+💼 *Должность:* Пока еще нет\)\. На данный момент работаю на частном предприятии\, обслуживаю оборудование\-.
     """
     await update.message.reply_text(
         about_text.strip(),
@@ -143,7 +142,7 @@ async def about(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 def main():
-    application = Application.builder().token("7054140256:AAGTTcGaDKIg6upSQm5ZqX5qJofnCazm22A").build()
+    application = Application.builder().token("токен").build()
 
     handlers = [
         CommandHandler("runtests", run_tests),

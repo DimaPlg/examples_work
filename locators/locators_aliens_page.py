@@ -13,21 +13,21 @@ class AliensPage(WebPage):
 
         super().__init__(web_driver, url)
 
-        aliens_page_article_link_category_first = WebElement(
-            xpath='(//*[@aria-label="Entry meta"])[last()-8]/*[1]')
-        aliens_page_article_link_category_second = WebElement(
-            xpath='(//*[@aria-label="Entry meta"])[last()-7]/*[1]')
-        aliens_page_article_link_category_third = WebElement(
-            xpath='(//*[@aria-label="Entry meta"])[last()-6]/*[1]')
-        aliens_page_article_link_category_four = WebElement(
-            xpath='(//*[@aria-label="Entry meta"])[last()-5]/*[1]')
-        aliens_page_article_link_category_fifth = WebElement(
-            xpath='(//*[@aria-label="Entry meta"])[last()-8]/*[1]')
-        aliens_page_article_link_category_six = WebElement(
-            xpath='(//*[@aria-label="Entry meta"])[last()-8]/*[1]')
-        aliens_page_article_link_category_seven = WebElement(
-            xpath='(//*[@aria-label="Entry meta"])[last()-8]/*[1]')
-        aliens_page_article_link_category_eight = WebElement(
-            xpath='(//*[@aria-label="Entry meta"])[last()-8]/*[1]')
+    aliens_page_article_link_category_first = WebElement(
+        xpath='(//*[@href="https://weeklyworldnews.com/category/aliens/"])[last()-8]')
+    aliens_page_article_link_category_second = WebElement(
+        xpath='(//*[@aria-label="Entry meta"])[last()-7]/*[1]')
+    aliens_page_article_link_category_third = WebElement(
+        xpath='(//*[@aria-label="Entry meta"])[last()-6]/*[1]')
+    aliens_page_article_link_category_four = WebElement(
+        xpath='(//*[@aria-label="Entry meta"])[last()-5]/*[1]')
+    aliens_page_article_link_category_fifth = WebElement(
+        xpath='(//*[@aria-label="Entry meta"])[last()-8]/*[1]')
+    aliens_page_article_link_category_six = WebElement(
+        xpath='(//*[@aria-label="Entry meta"])[last()-8]/*[1]')
+    aliens_page_article_link_category_seven = WebElement(
+        xpath='(//*[@aria-label="Entry meta"])[last()-8]/*[1]')
+    aliens_page_article_link_category_eight = WebElement(
+        xpath='(//*[@aria-label="Entry meta"])[last()-8]/*[1]')
 
-        aliens_page_btn_add_more = WebElement(xpath='//*[@class="masonry-load-more load-more  "]')
+    aliens_page_btn_add_more = WebElement(xpath='//*[@class="masonry-load-more load-more  "]')
